@@ -395,7 +395,7 @@ export function ValidatedBlobField({
             <a onClick={openFile(blobContentType, blob)} className="jhi-validated-blob-field-item-anchor">
               {isImage ? (
                 <img
-                  src={`data:${blobContentType};base64,${blob}`}
+                  src={blob}
                   style={imageStyle || { maxHeight: '100px' }}
                   className={imageClassName}
                 />
